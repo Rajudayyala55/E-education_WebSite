@@ -14,4 +14,5 @@ RUN npm run build
 FROM nginx:latest
 COPY --from=builder /E-education_WebSite/build /usr/share/nginx/html
 EXPOSE 80
+EXPOSE 5173
 CMD ["nginx", "-g", "daemon off;"]
