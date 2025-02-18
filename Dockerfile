@@ -16,7 +16,7 @@ RUN npm install
 
 COPY . . 
 
-RUN npm audit fix 
+#RUN npm audit fix 
 
 RUN npm run build 
 
